@@ -29,7 +29,7 @@ RUN apt-get update \
 		&& apt-get install -y wget
 
 RUN mkdir -p /opt/nordic \
-		&& wget https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v12.x.x/nRF5_SDK_12.2.0_f012efa.zip -O nordic_sdk.zip \
+		&& wget https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v14.x.x/nRF5_SDK_14.1.0_1dda907.zip -O nordic_sdk.zip \
 		&& unzip nordic_sdk.zip 'components/*' 'external/*' 'svd/*' -d $SDK_ROOT \
 		&& rm nordic_sdk.zip
 
